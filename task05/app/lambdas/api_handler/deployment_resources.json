@@ -3,29 +3,12 @@
     "predefined_policies": [],
     "principal_service": "lambda",
     "custom_policies": [
-      "lambda-basic-execution",
-      {
-        "PolicyName": "lambda-dynamodb-execution",
-        "PolicyDocument": {
-          "Version": "2012-10-17",
-          "Statement": [
-            {
-              "Effect": "Allow",
-              "Action": [
-                "dynamodb:GetItem",
-                "dynamodb:Query",
-                "dynamodb:PutItem",
-                "dynamodb:BatchWriteItem",
-                "dynamodb:BatchGetItem",
-                "dynamodb:DeleteItem"
-              ],
-              "Resource": "*"
-            }
-          ]
-        }
-      }
+      "lambda-basic-execution"
     ],
     "resource_type": "iam_role",
+    "allowed_accounts": [
+      "890742610830"
+    ],
     "tags": {}
   }
 }
